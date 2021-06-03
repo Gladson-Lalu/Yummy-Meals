@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtStaticOrderHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_previous_orders_are_listed_below"
+        android:layout_marginTop="6dp"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOrderHistoryHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtStaticOrderHistory"
+        android:layout_marginTop="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlNoHistoryPlaced"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgHistoryICHistory"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_history"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/nohistory" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgHistoryICHistory"
+            android:textAlignment="center"
+            android:text="@string/you_have_not_placed_any_orders"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_progressbar" />
+
+</RelativeLayout>

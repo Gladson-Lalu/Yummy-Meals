@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="8"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <View
+        android:layout_height="4dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/btnColor1"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/txtCartItemName"
+        android:layout_height="wrap_content"
+        android:layout_width="0dip"
+        android:layout_weight="5.7"
+        android:text="@string/item_name"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginStart="2dp" />
+
+    <TextView
+        android:id="@+id/txtCartItemPrice"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="2.0"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/rs_400"
+        android:textColor="@android:color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:fontFamily="sans-serif-condensed-medium" />
+</LinearLayout>

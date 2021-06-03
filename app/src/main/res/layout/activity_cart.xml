@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <include
+        android:id="@+id/toolbarCart"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/llRestaurantDetails"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbarCart"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/ordering_from"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/txtCartRestaurantName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/restaurant"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/llRestaurantDetails"
+        android:background="@color/colorToolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCartItems"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/line"
+        android:layout_margin="2dp"
+        android:layout_above="@id/btnPlaceOrder" />
+
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/place_order_price"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="@color/colorToolbar"
+        android:layout_alignParentBottom="true" />
+
+    <include layout="@layout/layout_progressbar" />
+
+</RelativeLayout>

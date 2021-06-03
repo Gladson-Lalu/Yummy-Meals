@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorToolbar"
+    >
+
+    <ImageView
+        android:id="@+id/imgDone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_done"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/done" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/your_order_has_been_successfully_placed"
+        android:textColor="@color/white"
+        android:layout_below="@id/imgDone"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black" />
+
+    <Button
+        android:id="@+id/btnOkOrderPlaced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorToolbar"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:elevation="6dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

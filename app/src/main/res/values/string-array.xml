@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_filter">
+        <item>Cost(Low to High)</item>
+        <item>Cost(High to Low)</item>
+        <item>Rating</item>
+    </string-array>
+</resources>

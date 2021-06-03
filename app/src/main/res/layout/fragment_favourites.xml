@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFavourites"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rlNoFavouriteRes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <ImageView
+            android:id="@+id/imgStaticFavFavourites"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_fav_2"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/favourite" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgStaticFavFavourites"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_margin="4dp"
+            android:text="@string/you_don_t_have_any_favourite_restaurants" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_progressbar" />
+</RelativeLayout>
