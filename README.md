@@ -10,13 +10,17 @@ Star⭐ the repo if you like what you see😉.
 
 &nbsp;                    |  &nbsp;
 :-------------------------|:-------------------------
-![](Screenshots/pic_1.png)  |  ![](Screenshots/pic_2.png)
-![](Screenshots/pic_6.png)  |  ![](Screenshots/pic_7.png)
-![](Screenshots/pic_8.png)  |  ![](Screenshots/pic_10.png)
-![](Screenshots/pic_14.png)  |  ![](Screenshots/pic_11.png)
-![](Screenshots/pic_12.png)  |  ![](Screenshots/pic_9.png)
-![](Screenshots/pic_13.png)  |  ![](Screenshots/pic_3.png)
-![](Screenshots/pic_4.png)  |  ![](Screenshots/pic_5.png)
+![](screenshots/pic_1.png)  |  ![](screenshots/pic_2.png)
+![](screenshots/pic_6.png)  |  ![](screenshots/pic_7.png)
+![](screenshots/pic_8.png)  |  ![](screenshots/pic_10.png)
+![](screenshots/pic_14.png)  |  ![](screenshots/pic_11.png)
+![](screenshots/pic_12.png)  |  ![](screenshots/pic_9.png)
+![](screenshots/pic_13.png)  |  ![](screenshots/pic_3.png)
+![](screenshots/pic_4.png)  |  ![](screenshots/pic_5.png)
+
+
+## Download 
+Download the APK [here](https://github.com/Gladson-Lalu/Yummy-Meals/raw/main/APK/Yummy_Meals.apk)
 
 ## Getting Started
 1. Install Android Studio, if you don't already have it.
